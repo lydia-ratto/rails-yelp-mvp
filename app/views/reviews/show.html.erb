@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li class="list-group-item">
+    <% @restaurant.reviews.each do |review| %>
+      <%= review.rating %>
+      <%= review.category %>
+    <% end %>
+  </li>
+</ul>
